@@ -13,13 +13,13 @@ if not hasattr(np, "NaN"):
 import pandas_ta as ta
 
 # ===================== USER CONFIG =====================
-API_KEY = "pyBMCoGa"
-CLIENT_ID = "A51947827"
-TOTP_SECRET = "T6LZJTSG3QR5HDBYEYCO5UTUWU"
-CLIENT_PASSWORD = "9627"
+API_KEY = ""
+CLIENT_ID = "
+TOTP_SECRET = ""
+CLIENT_PASSWORD = ""
 
-BOT_TOKEN = "8434799528:AAFHWY5yqWWPHYYmAUkr3D_zBbRI-Ps0Lac"
-CHAT_ID = "6072761949"
+BOT_TOKEN = ""
+CHAT_ID = ""
 
 # ===================== UI / REFRESH =====================
 st.set_page_config(page_title="NIFTY/BANKNIFTY Signal App", layout="wide")
@@ -221,4 +221,5 @@ def send_telegram(message: str):
 
 if st.button("Send Signal to Telegram"):
     send_telegram(f"{symbol} Signal: {signal} at {datetime.now().strftime('%H:%M:%S')}")
+
 

@@ -1,0 +1,8 @@
+streamlit
+streamlit-autorefresh
+pandas
+numpy
+SmartApi
+pyotp
+talib
+requests
